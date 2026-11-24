@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>AI Video Channel Report</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm 18mm 16mm; }
+  :root { --ink:#1b1f24; --muted:#5b6470; --teal:#0f6e74; --amber:#b86a00; --line:#d9dee4; --soft:#f3f6f8; --red:#a12b2b; --green:#1f6f3a; }
+  * { box-sizing: border-box; }
+  body { font-family: "DejaVu Sans", Arial, sans-serif; color: var(--ink); font-size: 10.2pt; line-height: 1.45; margin: 0; }
+  h1 { font-size: 26pt; margin: 0 0 6px; color: var(--teal); letter-spacing: -0.5px; }
+  h2 { font-size: 15pt; color: var(--teal); border-bottom: 2px solid var(--teal); padding-bottom: 4px; margin: 22px 0 10px; page-break-after: avoid; }
+  h3 { font-size: 11.5pt; margin: 14px 0 6px; color: var(--ink); page-break-after: avoid; }
+  p { margin: 6px 0; }
+  ul, ol { margin: 4px 0 8px 18px; padding: 0; }
+  li { margin: 2px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 9.3pt; page-break-inside: avoid; }
+  th { background: var(--teal); color: #fff; text-align: left; padding: 6px 7px; font-weight: 600; }
+  td { border-bottom: 1px solid var(--line); padding: 5px 7px; vertical-align: top; }
+  tr:nth-child(even) td { background: var(--soft); }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  tr.total td { font-weight: 700; background: #e6f1f1 !important; border-top: 2px solid var(--teal); }
+  .cover { height: 245mm; display: flex; flex-direction: column; justify-content: space-between; page-break-after: always; }
+  .cover .band { height: 10px; background: linear-gradient(90deg, var(--teal), var(--amber)); border-radius: 5px; }
+  .cover .sub { font-size: 13pt; color: var(--muted); margin-top: 4px; }
+  .meta { color: var(--muted); font-size: 9.5pt; }
+  .box { border-left: 4px solid var(--teal); background: var(--soft); padding: 9px 12px; margin: 10px 0; page-break-inside: avoid; }
+  .box.warn { border-color: var(--amber); background: #fff6ea; }
+  .box.stop { border-color: var(--red); background: #fdf0f0; }
+  .box.ok { border-color: var(--green); background: #eef7f0; }
+  .box b.t { display: block; margin-bottom: 3px; }
+  .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 10px 0; }
+  .kpi { border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; }
+  .kpi .v { font-size: 15pt; font-weight: 700; color: var(--teal); }
+  .kpi .l { font-size: 8.6pt; color: var(--muted); }
+  .src { font-size: 8.4pt; color: var(--muted); word-break: break-all; }
+  .src li { margin: 1px 0; }
+  .pb { page-break-before: always; }
+  code { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 8.8pt; background: #eef1f4; padding: 1px 4px; border-radius: 3px; }
+  pre { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 8.6pt; background: #eef1f4; padding: 8px 10px; border-radius: 5px; white-space: pre-wrap; page-break-inside: avoid; }
+  .tag { display:inline-block; font-size:8pt; padding:1px 6px; border-radius:9px; background:#e6f1f1; color:var(--teal); font-weight:600; }
+  .tag.a { background:#fff1dc; color:var(--amber); }
+  .tag.r { background:#fbe3e3; color:var(--red); }
+</style></head>
+<body>
+
+<section class="cover">
+  <div>
+    <div class="band"></div>
+    <div style="margin-top:36mm">
+      <h1>AI Video Channel:<br>Purchases, Earning Rules &amp; Scripting Report</h1>
+      <div class="sub">Equipment, costs, platform requirements, AI-content rules, scripting guide and a 6-month plan
+        for a YouTube / Instagram / Facebook channel built with WanGP</div>
+    </div>
+    <div class="kpis" style="margin-top:18mm">
+      <div class="kpi"><div class="v">$0</div><div class="l">needed to start: your laptop already renders</div></div>
+      <div class="kpi"><div class="v">1,000 + 4,000 h</div><div class="l">YouTube ad-revenue entry today (subs + watch hours)</div></div>
+      <div class="kpi"><div class="v">Feb 1, 2027</div><div class="l">YouTube doubles watch-hour / Shorts-view entry bar</div></div>
+    </div>
+  </div>
+  <div class="meta">
+    Prepared: 24 November 2026 · Prices in US dollars (country not specified; convert and check local stores).<br>
+    Figures for prices and platform rules come from the published reports listed in Section 11. They change often,
+    so re-check before buying or applying. This report is guidance, not legal, tax or financial advice.
+    <div class="band" style="margin-top:10px"></div>
+  </div>
+</section>
+
+<h2>1. Summary</h2>
+<div class="box ok"><b class="t">Bottom line</b>
+  Start now on the laptop you already have (RTX 5070 8 GB, WanGP installed and working). It costs nothing extra.
+  Build an audience for about 3 months. Only buy a desktop once growth is proven, and if possible after GPU and
+  memory prices come down.</div>
+<ul>
+  <li><b>Hardware prices are unusually high right now.</b> As of November 2026 the RTX 5070 Ti sells for about <b>$1,340</b>
+    (launch price $749), the RTX 5060 Ti 16 GB for about <b>$780–805</b> (launch $429), and 32 GB DDR5 memory kits for
+    roughly <b>$250–370</b>, about 3–4× last year's price. The $2,000 "Basic Plus" build discussed earlier <b>no longer fits $2,000</b>.
+    See Section 3 for builds that do.</li>
+  <li><b>YouTube ad revenue</b> today requires 1,000 subscribers plus 4,000 public watch hours (12 months) <i>or</i> 10 million
+    Shorts views (90 days). <b>From 1 February 2027</b> this becomes 8,000 watch hours or 20 million Shorts views for new applicants
+    (subscribers stay at 1,000). Channels already accepted are not affected, so <b>qualifying before February 2027 is a real advantage</b>.</li>
+  <li><b>AI video is allowed and can be monetized</b>, but YouTube refuses to pay for "generic or repetitive" mass-produced
+    content (rules clarified July 2026). Original research, script and point of view are what get approved.</li>
+  <li><b>Realistic AI footage must be disclosed</b> with YouTube's "altered or synthetic content" setting. Disclosure itself does not reduce reach or earnings.</li>
+</ul>
+
+<h2>2. What you already have (cost: $0)</h2>
+<table>
+  <tr><th>Item</th><th>Status</th><th>Notes</th></tr>
+  <tr><td>ASUS laptop, RTX 5070 Laptop GPU 8 GB, 32 GB RAM, 1 TB SSD</td><td><span class="tag">Working</span></td><td>WanGP generates real motion video. About 12 min per 5-second 720p clip at full quality, so about 7–8 h per 3-minute video.</td></tr>
+  <tr><td>WanGP (C:\Users\hanum\WanGP, env_venv)</td><td><span class="tag">Installed</span></td><td>Free. Its licence lets you sell or monetize what you create. Credit WanGP if you sell a video file directly.</td></tr>
+  <tr><td>Wan2.2 TI2V-5B video model</td><td><span class="tag">Downloaded</span></td><td>Apache-2.0 licence. Commercial use allowed.</td></tr>
+  <tr><td>Terafab project + shorts-kit (GitHub)</td><td><span class="tag">Ready</span></td><td>Narration, original music, subtitles, render, edit and thumbnail scripts.</td></tr>
+  <tr><td>Kokoro narration voice</td><td><span class="tag">Ready</span></td><td>Apache-2.0, free for commercial use. Disclose that it's a synthetic voice.</td></tr>
+</table>
+<h3>Laptop care settings (Armoury Crate)</h3>
+<ul>
+  <li>Battery Health Charging: <b>Balanced (80%)</b>. Operating mode: <b>Performance</b>. GPU mode: <b>Standard / Optimized</b>.</li>
+  <li>Render plugged in, on a hard surface with the back raised or on a cooling pad. Keep the GPU <b>under ~85 °C</b> (<code>nvidia-smi</code>).</li>
+  <li>Clean the vents every few months. After uploading, back up the final video and delete its <code>clips</code> folder (1–2.5 GB per video).</li>
+</ul>
+
+<h2>3. Purchases</h2>
+<h3>3.1 Recommended small purchases now (optional, ~$60–260)</h3>
+<table>
+  <tr><th>Item</th><th class="num">Approx. cost</th><th>Why</th></tr>
+  <tr><td>Laptop cooling pad / stand</td><td class="num">$25–60</td><td>Lower temperatures during 8-hour renders, and longer laptop life.</td></tr>
+  <tr><td>External SSD or HDD, 1–2 TB (backup)</td><td class="num">$70–150</td><td>Keep finished videos safe and free laptop space.</td></tr>
+  <tr><td>USB microphone (optional)</td><td class="num">$40–100</td><td>Your own narration voice helps against "generic AI" rejection and builds trust.</td></tr>
+  <tr><td>Small UPS (only if you get power cuts)</td><td class="num">$80–150</td><td>A power cut wastes hours of rendering.</td></tr>
+</table>
+
+<h3>3.2 Desktop PC, later (once the channel is growing)</h3>
+<div class="box warn"><b class="t">Prices changed: the earlier "Basic Plus" plan</b>
+  The earlier plan (RTX 5070 Ti, 96 GB DDR5, two 2 TB SSDs) would now cost roughly <b>$3,000+</b> because of the GPU and memory
+  price surge. The builds below are adjusted to realistic November 2026 prices. All component prices except the GPUs are
+  estimates, so check local stores. The video card is still the most important part: <b>16 GB of VRAM or more, NVIDIA</b>.</div>
+
+<table>
+  <tr><th>Part</th><th>Build A: "Fits $2,000"</th><th class="num">Est.</th><th>Build B: "Faster" (if prices fall)</th><th class="num">Est.</th></tr>
+  <tr><td>GPU</td><td>RTX 5060 Ti <b>16 GB</b></td><td class="num">$780–805</td><td>RTX 5070 Ti <b>16 GB</b></td><td class="num">$1,180–1,340</td></tr>
+  <tr><td>CPU</td><td>Ryzen 5 7600 / 9600</td><td class="num">$180–250</td><td>Ryzen 5 9600X / Ryzen 7 7700</td><td class="num">$220–300</td></tr>
+  <tr><td>CPU cooler</td><td>Tower air cooler</td><td class="num">$35–50</td><td>Tower air cooler</td><td class="num">$35–50</td></tr>
+  <tr><td>Motherboard</td><td>B650 (AM5)</td><td class="num">$130–180</td><td>B650 / B850 (AM5)</td><td class="num">$150–220</td></tr>
+  <tr><td>Memory</td><td><b>32 GB DDR5</b> (2×16); add 32 GB later when cheaper</td><td class="num">$250–370</td><td><b>64 GB DDR5</b> (2×32)</td><td class="num">$500–740</td></tr>
+  <tr><td>SSD</td><td>2 TB NVMe Gen4</td><td class="num">$130–200</td><td>2 TB NVMe Gen4</td><td class="num">$130–200</td></tr>
+  <tr><td>Power supply</td><td>850 W 80+ Gold, ATX 3.1</td><td class="num">$100–130</td><td>850 W 80+ Gold, ATX 3.1</td><td class="num">$100–130</td></tr>
+  <tr><td>Case</td><td>Mesh-front airflow, 3 fans</td><td class="num">$70–100</td><td>Mesh-front airflow, 3+ fans</td><td class="num">$80–120</td></tr>
+  <tr class="total"><td>Total (no Windows)</td><td></td><td class="num">≈ $1,675–2,085</td><td></td><td class="num">≈ $2,395–3,080</td></tr>
+  <tr><td>Speed vs. laptop</td><td colspan="2">≈ 2× faster (≈ 4 h per 3-min video)</td><td colspan="2">≈ 3× faster (≈ 2.5–3 h per 3-min video)</td></tr>
+</table>
+<p class="meta">Speed figures are rough estimates based on GPU class and VRAM, not benchmarks on these exact parts.
+Windows 11 licence (~$0–140) and a monitor are extra if you don't have them. You can reuse the laptop's 1 TB SSD contents by copying the WanGP and project folders.</p>
+
+<h3>3.3 Ways to spend less</h3>
+<ul>
+  <li><b>Wait for prices to settle.</b> The GPU and memory surge in 2026 was steep and fast: the 5070 Ti rose $160 in eight days in November.
+    Watch Black Friday (27 Nov 2026) and early-2027 prices, but don't count on bargains.</li>
+  <li><b>Used RTX 3090 24 GB</b>: 24 GB of VRAM is excellent for WanGP. Buy only from a seller with returns, and test with <code>nvidia-smi</code> plus a WanGP render.</li>
+  <li><b>Reuse what you have</b>: keep rendering on the laptop overnight. It's slower, but already paid for.</li>
+  <li><b>Don't buy</b>: GPUs with 8–12 GB of VRAM, AMD cards for WanGP (supported, but slower and less tested), or cheap unbranded power supplies.</li>
+</ul>
+
+<h3>3.4 When to buy: decision rule</h3>
+<table>
+  <tr><th>After ~3 months of posting on the laptop…</th><th>Action</th></tr>
+  <tr><td>Steady growth: a few hundred subscribers, videos regularly reach thousands of views, watch hours rising</td><td><b>Buy Build A</b> (or B if prices drop). Rendering time is now the bottleneck.</td></tr>
+  <tr><td>Slow or no growth</td><td><b>Don't buy yet.</b> Change topics, titles, thumbnails or style first. Hardware won't fix this.</td></tr>
+  <tr><td>Already qualified for monetization</td><td>Buy with confidence, paying from channel income if possible.</td></tr>
+</table>
+
+<h2 class="pb">4. YouTube: how monetization works</h2>
+<h3>4.1 YouTube Partner Program (YPP) entry requirements</h3>
+<table>
+  <tr><th>Tier</th><th>Requirements</th><th>What it unlocks</th></tr>
+  <tr><td><b>Ad revenue tier</b> (until 31 Jan 2027)</td><td>1,000 subscribers <b>and</b> either 4,000 valid public watch hours in the last 12 months <b>or</b> 10 million valid public Shorts views in the last 90 days</td><td>Ad revenue on long videos and Shorts, YouTube Premium revenue, plus all fan-funding features</td></tr>
+  <tr><td><b>Ad revenue tier</b> (new applicants from <b>1 Feb 2027</b>)</td><td>1,000 subscribers <b>and</b> 8,000 watch hours (12 months) <b>or</b> 20 million Shorts views (90 days)</td><td>Same. Channels already in YPP are not affected.</td></tr>
+  <tr><td><b>Fan-funding tier</b> (eligible countries)</td><td>500 subscribers, 3 public uploads in 90 days, and 3,000 watch hours (12 months) <b>or</b> 3 million Shorts views (90 days)</td><td>Channel memberships, Super Thanks/Chat/Stickers, Shopping. <b>No ad revenue.</b></td></tr>
+</table>
+<p><b>Also required:</b> live in a country where YPP is available, follow YouTube's monetization policies, have no active Community Guidelines strike,
+2-step verification on your Google account, and a linked <b>AdSense</b> account (you must be 18+, or use a parent's/guardian's AdSense account).</p>
+<div class="box"><b class="t">Important detail</b>Views of Shorts in the Shorts feed do <b>not</b> count toward the 4,000 (or 8,000) watch hours.
+  Only long-form watch time counts. Shorts help you gain subscribers; the long documentaries earn the watch hours.</div>
+
+<h3>4.2 What you would earn</h3>
+<ul>
+  <li><b>Long videos:</b> creators receive 55% of ad revenue on their long-form videos. Tech, AI and finance topics usually earn more per view than entertainment.</li>
+  <li><b>Shorts:</b> paid from a shared Shorts revenue pool, usually much less per view than long videos.</li>
+  <li>Per-view earnings vary hugely by country of the viewers, topic and season, so don't plan your finances on a fixed number.</li>
+  <li>Many creators earn more from <b>sponsorships and affiliate links</b> than from ads once they have a loyal audience.</li>
+</ul>
+
+<h2>5. AI-content rules (most important for your channel)</h2>
+<h3>5.1 "Generic or repetitive" content is not monetized</h3>
+<p>In July 2026 YouTube clarified its monetization guidelines (the section formerly called "inauthentic content"). Three types are <b>not paid</b>:</p>
+<ol>
+  <li><b>Generic or repetitive content:</b> mass-produced videos, near-identical templates, and tutorials that just copy what already exists.</li>
+  <li><b>Unsatisfying or off-putting content:</b> low-effort "AI slop" that wastes viewers' time.</li>
+  <li><b>AI personas discussing sensitive topics:</b> for example, a synthetic presenter giving news, health or finance claims.</li>
+</ol>
+<p>YouTube states that using AI for scripting, editing or production is fine <b>if the video offers unique value</b>.
+The penalty is usually losing monetization for the whole channel, not just one video, so this matters a lot.</p>
+
+<div class="box ok"><b class="t">How your channel stays on the right side</b>
+<ul style="margin-bottom:0">
+  <li>Every video has <b>its own researched script</b> with facts, sources and your analysis (like the fact-checked Terafab script).</li>
+  <li>Give a clear <b>point of view</b>: explain why it matters, what's uncertain, and what you think.</li>
+  <li>Vary format and visuals. Don't publish dozens of near-identical template videos.</li>
+  <li>Consider <b>your own voice</b> for narration, at least sometimes, and a consistent channel identity.</li>
+  <li>Quality over quantity: 2–3 strong videos a week beats 20 weak ones.</li>
+</ul></div>
+
+<h3>5.2 Disclose realistic AI footage</h3>
+<ul>
+  <li>When uploading, answer <b>"Altered or synthetic content: Yes"</b> in the Details section for realistic AI scenes (factories, people, places, events that didn't happen as shown).</li>
+  <li>The label appears in the description (sometimes on the player). <b>Disclosing does not reduce reach or earnings</b>. Not disclosing can lead to a label being added for you, and repeated failure to disclose can bring penalties.</li>
+  <li>Also label inside the video: "CONCEPT VISUALIZATION", "AI-GENERATED VISUALIZATION" (your scripts already do this).</li>
+</ul>
+
+<h3>5.3 Real people, brands and misleading content</h3>
+<ul>
+  <li><b>Never generate a real person's face or voice</b> (for example Elon Musk) saying or doing things. It risks privacy and impersonation removal, strikes and legal problems.</li>
+  <li>Don't use company <b>logos</b> (Tesla, SpaceX) in a way that suggests the company made or endorses your video. Mentioning names in titles for news and commentary is normal.</li>
+  <li>Don't present AI footage as real footage, and don't present plans or targets as achievements (e.g., "Terafab is producing chips" would be false).</li>
+  <li>Thumbnails and titles must match the video. Misleading thumbnails can break spam and deceptive-practices policies.</li>
+</ul>
+
+<h3>5.4 Copyright</h3>
+<ul>
+  <li>Use only music, sound effects, voices, images and footage you created or have a licence for. Your current music, effects and narration are original or Apache-2.0.</li>
+  <li>YouTube's Content ID automatically detects copyrighted music; one match can send a video's earnings to the rights holder. Three copyright strikes terminate a channel.</li>
+  <li>The YouTube Audio Library offers free tracks that are safe to monetize.</li>
+  <li>Check the licence of every AI model you use. Wan2.2 (Apache-2.0) and Kokoro (Apache-2.0) allow commercial use; verify any new model or LoRA before using it in monetized videos.</li>
+</ul>
+
+<h2 class="pb">6. Instagram and Facebook</h2>
+<table>
+  <tr><th>Platform</th><th>Basic requirements</th><th>Ways to earn</th></tr>
+  <tr><td><b>Facebook</b></td><td>Professional mode (or a Page), follow Meta's Partner Monetization and Content Monetization policies. Content Monetization is <b>invite-only</b>: submit the interest form in Professional Dashboard → Monetization. Meta doesn't publish a fixed follower number, and third-party figures (500–1,000 followers) are unverified.</td><td>Content Monetization (Reels, videos, posts), Stars, subscriptions. "Creator Fast Track" is a separate programme for established creators from other platforms.</td></tr>
+  <tr><td><b>Instagram</b></td><td>Professional (creator) account, age 18+, follow Meta's policies. Features roll out by country.</td><td>Gifts on Reels (reported from ~500 followers), Subscriptions (reported ~10,000 followers), brand partnerships. Thresholds are from third-party guides, so check the app's Monetization status.</td></tr>
+</table>
+<ul>
+  <li>Meta reviews <b>originality</b>. Reposting the same unchanged clip everywhere, or reposting other people's content, can block monetization. Re-edit Shorts and Reels for each platform: different captions, hook and length.</li>
+  <li>Meta also labels AI-generated content ("AI info"). Use its AI-disclosure option for realistic AI videos.</li>
+  <li>Check eligibility in the app: Professional Dashboard → Monetization (Facebook) or Professional dashboard → Monetization status (Instagram).</li>
+</ul>
+
+<h2>7. Money, tax and legal basics</h2>
+<ul>
+  <li><b>Payments:</b> YouTube pays through AdSense once you pass the payment threshold (commonly $100 or the local equivalent), after identity, address and bank verification.</li>
+  <li><b>US tax form:</b> every YouTube creator must submit US tax information in AdSense. Creators outside the US usually submit a <b>W-8BEN</b>. Without it, Google can withhold up to 24% of total earnings. With it, only US-viewer earnings are withheld, at 0–30% depending on your country's tax treaty.</li>
+  <li><b>Local income tax:</b> channel income is taxable where you live. Keep records of income and expenses (GPU, PC, software and electricity may be deductible business expenses, depending on local law). Ask a local tax adviser once income starts.</li>
+  <li><b>Sponsorships:</b> always tick YouTube's "includes paid promotion" box and say it clearly in the video. Advertising rules in most countries (for example, the FTC in the US or ASCI in India) require clear disclosure.</li>
+  <li><b>Contracts:</b> read brand-deal terms for usage rights, exclusivity and payment dates before signing.</li>
+</ul>
+
+<h2>8. Six-month action plan</h2>
+<table>
+  <tr><th>When</th><th>Do this</th><th>Target</th></tr>
+  <tr><td>Week 1</td><td>Finish and upload the Terafab documentary. Set up the channel name, banner and About text; link Instagram and Facebook. Turn on 2-step verification.</td><td>First video live, with AI disclosure ticked</td></tr>
+  <tr><td>Weeks 2–4</td><td>Each week: 1–2 long videos (3–8 min) and 3–5 Shorts/Reels cut from them. Research and fact-check every script.</td><td>Consistent schedule</td></tr>
+  <tr><td>Months 2–3</td><td>Study YouTube Studio analytics: click-through rate, average view duration, top topics. Double down on what works.</td><td>A few hundred subscribers, rising watch hours</td></tr>
+  <tr><td>Month 3: decision</td><td>Apply the Section 3.4 rule. Buy the PC only if growth is proven.</td><td>Hardware decision based on data</td></tr>
+  <tr><td>Months 3–6</td><td>Push for 1,000 subscribers + 4,000 watch hours <b>before 1 Feb 2027</b> if possible; after that the bar doubles. Longer documentaries (8–12 min) build watch hours faster.</td><td>Apply for YPP</td></tr>
+  <tr><td>Ongoing</td><td>Respond to comments, keep a source list for every video, rotate formats, add your own voice or opinion.</td><td>Stay clear of the "generic/repetitive" rule</td></tr>
+</table>
+<div class="box warn"><b class="t">Be realistic</b>Most new channels take many months to reach monetization, and many never do.
+Treat the first 3–6 months as learning, and avoid large purchases until results justify them.</div>
+
+<h3>Upload checklist (every video)</h3>
+<ul>
+  <li>☐ Facts checked against sources, with sources listed in the description</li>
+  <li>☐ "Altered or synthetic content" set to Yes for realistic AI footage, and on-screen concept labels added</li>
+  <li>☐ No real person's likeness or voice, and no misleading logos</li>
+  <li>☐ All music, effects and voices original or licensed</li>
+  <li>☐ Captions (SRT) uploaded, chapters in the description</li>
+  <li>☐ Title and thumbnail honest and matching the content</li>
+  <li>☐ Paid promotion box ticked if sponsored</li>
+</ul>
+
+<h2 class="pb">9. Scripting guide: writing each video</h2>
+<p>The script is what makes a video <b>original</b>. It's your main protection against YouTube's "generic or repetitive"
+rule, and the main reason viewers stay. Spend more time on the script than on rendering.</p>
+
+<h3>9.1 Script workflow (per video, about 2–4 hours)</h3>
+<table>
+  <tr><th>Step</th><th>What to do</th><th>Output</th></tr>
+  <tr><td>1. Topic check</td><td>Is it searched or trending (YouTube search suggestions, Google Trends)? Can you add something others haven't: newer facts, a clearer explanation, a strong opinion?</td><td>One-sentence angle</td></tr>
+  <tr><td>2. Research</td><td>Collect 3–5 reliable sources (official announcements, Reuters/AP, company filings, respected trade press). Note dates. Separate <b>facts</b>, <b>plans/targets</b> and <b>opinions</b>.</td><td>Source list with dates</td></tr>
+  <tr><td>3. Outline</td><td>Hook → context → 4–8 key beats → "what's uncertain" → your conclusion → question for comments.</td><td>Beat list</td></tr>
+  <tr><td>4. Write narration</td><td>About <b>2.3–2.6 words per second</b> (140–155 words per minute). A 10-second scene holds about 22–25 words; a 3-minute video about 420–460 words.</td><td>Narration text per scene</td></tr>
+  <tr><td>5. Fact-check pass</td><td>Every number, date and name must match a source. Use cautious wording for plans ("targets", "proposed", "aims to").</td><td>Checked script + sources in description</td></tr>
+  <tr><td>6. Visual prompts</td><td>For each scene, write a <b>motion</b> prompt: subject movement, camera movement, lighting, style. No text inside the video.</td><td>Prompt per 5-second shot</td></tr>
+  <tr><td>7. Labels</td><td>Mark which scenes need "CONCEPT VISUALIZATION" or similar overlays.</td><td>Overlay list</td></tr>
+  <tr><td>8. Read aloud</td><td>Read the whole script at speaking speed. Cut anything that stumbles or exceeds the scene time.</td><td>Final script</td></tr>
+</table>
+
+<h3>9.2 Long-video script template (3 minutes, 18 scenes)</h3>
+<table>
+  <tr><th>Time</th><th>Section</th><th>Purpose</th><th>Example (Terafab)</th></tr>
+  <tr><td>0:00–0:10</td><td><b>Hook</b></td><td>A question or surprising fact. No "hi guys" intro.</td><td>"AI is growing faster than the factories that make its chips…"</td></tr>
+  <tr><td>0:10–0:30</td><td>Problem &amp; subject</td><td>Why it matters, what the topic is</td><td>Chip bottleneck → introducing Terafab</td></tr>
+  <tr><td>0:30–1:40</td><td>Explain</td><td>How it works, step by step, with visuals</td><td>Silicon → cleanroom → lithography → packaging</td></tr>
+  <tr><td>1:40–2:10</td><td>Why people care</td><td>Real-world uses</td><td>EVs, robots, data centers</td></tr>
+  <tr><td>2:10–2:50</td><td><b>Reality check</b></td><td>Risks, what's confirmed vs. planned</td><td>"Targets are plans, not completed milestones"</td></tr>
+  <tr><td>2:50–3:00</td><td>Close + question</td><td>Your takeaway, and a question to drive comments</td><td>"What's your prediction?"</td></tr>
+</table>
+
+<h3>9.3 Shorts / Reels script template (30–45 seconds)</h3>
+<table>
+  <tr><th>Time</th><th>Beat</th><th>Rule</th></tr>
+  <tr><td>0–2 s</td><td>Hook line on screen + spoken</td><td>Bold claim or question. The first frame must already move.</td></tr>
+  <tr><td>2–25 s</td><td>3 quick facts or steps</td><td>One idea per shot, 5–8 words of on-screen text each</td></tr>
+  <tr><td>25–35 s</td><td>Twist or reality check</td><td>The surprising part, or "but here's the catch…"</td></tr>
+  <tr><td>35–45 s</td><td>Call to action</td><td>"Full documentary on the channel" or a comment question</td></tr>
+</table>
+
+<h3>9.4 Wording rules for accurate, monetizable scripts</h3>
+<table>
+  <tr><th>Avoid</th><th>Write instead</th></tr>
+  <tr><td>"Terafab is making chips"</td><td>"Terafab <b>aims</b> to start volume production in 2028"</td></tr>
+  <tr><td>"This is the Terafab factory" (over AI footage)</td><td>"A <b>concept visualization</b> of what the campus could look like"</td></tr>
+  <tr><td>"Musk said…" (without a source)</td><td>"In an October 2026 call, Musk said…", with the source in the description</td></tr>
+  <tr><td>Clickbait: "SHOCKING secret Tesla doesn't want you to know"</td><td>Curiosity that's true: "Why Tesla and SpaceX want their own chip factory"</td></tr>
+  <tr><td>Financial or medical advice</td><td>Neutral explanation plus "this isn't advice"</td></tr>
+</table>
+
+<h3>9.5 Scene script card (copy for each scene)</h3>
+<pre>SCENE __  TITLE: ______________________   TIME: __:__–__:__
+VO (≤25 words): ____________________________________________
+SHOT A prompt (5 s, motion + camera): _______________________
+SHOT B prompt (5 s, motion + camera): _______________________
+SOUND: _______________________   OVERLAY LABEL: ______________
+FACT SOURCE(S): ____________________________________________</pre>
+
+<h3>9.6 Titles, descriptions and thumbnails</h3>
+<ul>
+  <li><b>Title:</b> 50–70 characters, with the main keyword first. Example: "TERAFAB: Elon Musk's AI Chip Factory Explained".</li>
+  <li><b>Description:</b> 2–3 summary lines, the AI disclosure sentence, chapters (0:00 …), sources, then 3–5 hashtags.</li>
+  <li><b>Thumbnail:</b> one strong image, 2–3 words of large text, high contrast, labelled "CONCEPT" if AI-made. No fake real-person photos.</li>
+</ul>
+
+<h2>10. Production scripts reference</h2>
+<p>These scripts are in your GitHub project (<code>hanumabathini/git-github</code>, branch <code>claude/wangp-video-instagram-youtube-7vzwv0</code>),
+on the laptop at <code>C:\Users\hanum\git-github</code>.</p>
+<table>
+  <tr><th>Script</th><th>What it does</th><th>Command</th></tr>
+  <tr><td><code>terafab\scripts\check_system.bat</code></td><td>Shows the GPU, driver, VRAM, RAM, free disk, Python, Git, ffmpeg and WanGP models. Changes nothing.</td><td><code>scripts\check_system.bat</code></td></tr>
+  <tr><td><code>terafab\scripts\build_manifest.py</code></td><td>Holds the 18 scenes (narration, prompts, labels, seeds) and writes <code>project\scene_manifest.json</code>. Edit this file to make a new video.</td><td><code>python scripts\build_manifest.py</code></td></tr>
+  <tr><td><code>terafab\scripts\make_audio.py</code></td><td>Makes the narration (Kokoro voice), original music and sound effects, the mix (-14 LUFS) and subtitles timed from the real audio.</td><td><code>python scripts\make_audio.py --model-dir &lt;kokoro folder&gt;</code></td></tr>
+  <tr><td><code>terafab\scripts\render_scenes.py</code></td><td>Renders every shot with WanGP. It resumes, retries at lower settings on memory errors, and rejects static or frozen clips. Never uses still images.</td><td><code>python scripts\render_scenes.py --motion-test</code><br><code>python scripts\render_scenes.py --start-rung 0</code></td></tr>
+  <tr><td><code>terafab\scripts\assemble_movie.py</code></td><td>Edits the clips into a 1920×1080, 30 fps movie with labels, end title and audio. Makes the thumbnail and <code>render_report.md</code>.</td><td><code>python scripts\assemble_movie.py</code></td></tr>
+  <tr><td><code>terafab\run_all.bat</code></td><td>All of the above in order.</td><td><code>run_all.bat</code></td></tr>
+  <tr><td><code>shorts-kit\make_shorts.py</code></td><td>Turns prompts in <code>shorts.json</code> into 1080×1920 vertical Shorts/Reels with captions and music.</td><td><code>python make_shorts.py --template my_settings.json</code></td></tr>
+</table>
+
+<h3>Render settings ("rungs")</h3>
+<table>
+  <tr><th>Rung</th><th>Model / resolution / steps</th><th>Time per 5-second clip (laptop)</th><th>Use for</th></tr>
+  <tr><td>0</td><td>Wan2.2 5B, 1280×720, 40 steps</td><td>≈ 12 min (measured estimate)</td><td>Final quality</td></tr>
+  <tr><td>1</td><td>Wan2.2 5B, 1280×704, 30 steps</td><td>≈ 9 min (estimate)</td><td>Nearly the same quality, faster</td></tr>
+  <tr><td>2</td><td>FastWan 5B, 1280×720, 3 steps</td><td>≈ 1–2 min (estimate)</td><td>Drafts and previews</td></tr>
+  <tr><td>3</td><td>FastWan 5B, 960×544, 3 steps</td><td>&lt; 1 min (estimate)</td><td>Memory-error fallback</td></tr>
+</table>
+
+<h3>Making your next video with the same pipeline</h3>
+<ol>
+  <li>Write the script with the 9.5 scene cards.</li>
+  <li>Copy the <code>terafab</code> folder to a new name. In <code>scripts\build_manifest.py</code>, replace the scene list (title, narration, sound, label, two prompts per scene).</li>
+  <li><code>python scripts\build_manifest.py</code>, then <code>python scripts\make_audio.py --model-dir &lt;folder&gt;</code>.</li>
+  <li><code>python scripts\render_scenes.py --start-rung 0</code> (overnight), then <code>python scripts\assemble_movie.py</code>.</li>
+  <li>Check <code>output\render_report.md</code>, then upload using the checklist in Section 8.</li>
+</ol>
+<div class="box"><b class="t">Tip</b>Ask Claude to draft a new <code>build_manifest.py</code> scene list from your script. Then review and fact-check it yourself before rendering.</div>
+
+<h2 class="pb">11. Sources</h2>
+<p class="meta">Checked 24 November 2026. Rules and prices change, so verify on the official pages (YouTube Help Center, YouTube Studio → Earn, Meta Professional Dashboard) before acting.</p>
+<h3>YouTube monetization &amp; policies</h3>
+<ul class="src">
+  <li>YouTube Partner Program overview &amp; eligibility: https://support.google.com/youtube/answer/72851</li>
+  <li>How to earn money on YouTube: https://support.google.com/youtube/answer/72857</li>
+  <li>YPP requirement changes (Feb 2027), Tubefilter: https://www.tubefilter.com/2026/08/10/youtube-partner-program-ad-eligibility-requirements-shorts/amp/</li>
+  <li>No Film School, YPP changes: https://nofilmschool.com/youtube-partner-program-changes</li>
+  <li>vidIQ YPP guide: https://vidiq.com/blog/post/monetize-youtube-guide/</li>
+  <li>Inauthentic / generic content update, Tubefilter: https://www.tubefilter.com/2026/07/13/youtube-inauthentic-content-monetization-policy-update/</li>
+  <li>TechCrunch, AI slop policy clarification: https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/</li>
+  <li>TechRepublic, AI monetization rules: https://techrepublic.com/article/news-youtube-ai-video-monetization-rules</li>
+  <li>vidIQ, YouTube AI monetization: https://vidiq.com/blog/post/youtube-ai-monetization/</li>
+  <li>Disclosing altered or synthetic content (YouTube Help): https://support.google.com/youtube/answer/14328491</li>
+  <li>YouTube blog, AI disclosure: https://blog.youtube/news-and-events/disclosing-ai-generated-content</li>
+</ul>
+<h3>Facebook &amp; Instagram</h3>
+<ul class="src">
+  <li>Meta, Creator Fast Track: https://about.fb.com/news/2026/03/creator-fast-track-grow-your-audience-earn-money-on-facebook/</li>
+  <li>Facebook creators, Content Monetization tips: https://creators.facebook.com/blog/new-tips-to-help-you-earn-on-facebook-content-monetization</li>
+  <li>Buffer, How to make money on Facebook (2026): https://buffer.com/resources/how-to-make-money-on-facebook/</li>
+  <li>Buffer, How to make money on Instagram (2026): https://www.buffer.com/resources/how-to-make-money-on-instagram</li>
+  <li>Metricool, Instagram monetization: https://metricool.com/how-to-monetize-instagram/</li>
+</ul>
+<h3>Hardware prices</h3>
+<ul class="src">
+  <li>TweakTown, RTX 5070 Ti prices (Nov 2026): https://www.tweaktown.com/news/114535/nvidia-rtx-5070-ti-prices-jump-160-in-eight-days-now-79-above-msrp-in-the-us/index.html</li>
+  <li>Tech Insider, RTX 5070 Ti price jump: https://tech-insider.org/nvidia-rtx-5070-ti-price-jump-160-dollars-79-percent-above-msrp-2026/</li>
+  <li>Digital Citizen, RTX 5060 Ti 16 GB median price: https://www.digitalcitizen.life/nvidia-rtx-5060-ti-16gb-median-price-reaches-805-as-rtx-50-series-costs-keep-rising/</li>
+  <li>PC Gamer, RTX 5060 Ti 16 GB vs RTX 5070 pricing: https://pcgamer.com/hardware/graphics-cards/the-rtx-5060-ti-16-gb-currently-costs-more-than-the-rtx-5070-and-rx-9070-xt-and-i-know-which-one-id-pick</li>
+  <li>NoobFeed, GPU / RAM / SSD price trends 2026: https://www.noobfeed.com/hardware/gpu-ram-ssd-price-pc-hardware</li>
+  <li>TechSpot, GPU pricing mid-2026: https://techspot.com/article/3152-gpu-pricing-mid-2026</li>
+</ul>
+<h3>Software licences</h3>
+<ul class="src">
+  <li>WanGP (Wan2GP) and its Community License 2.0: https://github.com/deepbeepmeep/Wan2GP</li>
+  <li>Kokoro-82M TTS (Apache-2.0): https://huggingface.co/hexgrad/Kokoro-82M</li>
+</ul>
+</body></html>
