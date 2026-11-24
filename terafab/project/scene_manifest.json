@@ -1,0 +1,637 @@
+{
+  "title": "TERAFAB — THE FACTORY THAT COULD POWER THE AI FUTURE",
+  "runtime_seconds": 180,
+  "delivery": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "video_codec": "h264",
+    "audio_codec": "aac"
+  },
+  "generator": {
+    "tool": "WanGP (Wan2GP) headless: wgp.py --process <settings.json>",
+    "model_type": "ti2v_2_2",
+    "model": "Wan2.2 TextImage2Video 5B (Apache-2.0 weights)",
+    "fallback_ladder": [
+      {
+        "model_type": "ti2v_2_2",
+        "resolution": "1280x720",
+        "num_inference_steps": 40
+      },
+      {
+        "model_type": "ti2v_2_2",
+        "resolution": "1280x704",
+        "num_inference_steps": 30
+      },
+      {
+        "model_type": "ti2v_2_2_fastwan",
+        "resolution": "1280x720",
+        "num_inference_steps": 3
+      },
+      {
+        "model_type": "ti2v_2_2_fastwan",
+        "resolution": "960x544",
+        "num_inference_steps": 3
+      }
+    ],
+    "video_length_frames": 121,
+    "native_fps": 24,
+    "plan": "36 x 5-second motion clips edited into 18 x 10-second chapters"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "title": "THE OPENING QUESTION",
+      "start": 0,
+      "end": 10,
+      "duration": 10,
+      "narration": "Artificial intelligence is growing faster than the factories that make its chips. So what happens when demand outruns supply?",
+      "sound": "Deep synthetic bass hit, rising mechanical hum",
+      "overlay": null,
+      "narration_audio": "audio/vo/scene01.flac",
+      "shots": [
+        {
+          "id": "s01a",
+          "duration": 5,
+          "prompt": "High aerial night shot of a vast modern metropolis, camera dives forward and down between illuminated skyscrapers, thousands of lit windows, car headlights streaming along streets, light pulses travelling along roads, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1010,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s01b",
+          "duration": 5,
+          "prompt": "Fast forward tracking shot into a high-density AI data center corridor, rows of server racks, cooling fans spinning, blue and amber LED indicators flickering, camera pushes forward steadily, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1011,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "title": "THE BOTTLENECK",
+      "start": 10,
+      "end": 20,
+      "duration": 10,
+      "narration": "Every robot, self-driving system, and AI server needs silicon. But advanced chips are among humanity's hardest products to manufacture.",
+      "sound": "Rhythmic machine ticks, glassy chime",
+      "overlay": null,
+      "narration_audio": "audio/vo/scene02.flac",
+      "shots": [
+        {
+          "id": "s02a",
+          "duration": 5,
+          "prompt": "Smooth lateral dolly through an industrial semiconductor factory, camera weaves between precision machines, robotic overhead carriers move sealed wafer pods along rails, transfer arms actively moving, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1020,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s02b",
+          "duration": 5,
+          "prompt": "Close-up of a polished silicon wafer rotating on a motorized precision stage inside an automated tool, reflections of light sweep across its mirror surface, a robotic arm retracts, cleanroom lighting, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1021,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "title": "INTRODUCING TERAFAB",
+      "start": 20,
+      "end": 30,
+      "duration": 10,
+      "narration": "Enter Terafab: a proposed giant chipmaking project backed by Tesla and SpaceX, built around one ambitious idea. Scale.",
+      "sound": "Wind, distant construction, swelling strings",
+      "overlay": "TERAFAB — CONCEPT VISUALIZATION",
+      "narration_audio": "audio/vo/scene03.flac",
+      "shots": [
+        {
+          "id": "s03a",
+          "duration": 5,
+          "prompt": "Aerial drone flyover revealing a vast futuristic semiconductor manufacturing campus in flat Texas landscape emerging from morning fog and low clouds, warm sunrise, enormous interconnected white buildings, conceptual architectural visualization, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1030,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s03b",
+          "duration": 5,
+          "prompt": "Aerial orbit over a huge chip factory construction site at sunrise, tall construction cranes rotating, trucks driving on site roads, dust drifting, clouds moving, conceptual architectural visualization, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1031,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "title": "WHY NOW?",
+      "start": 30,
+      "end": 40,
+      "duration": 10,
+      "narration": "The bet is simple. If computing becomes the engine of everything, controlling more chip production could change the race.",
+      "sound": "Server fan whoosh, low pulse",
+      "overlay": null,
+      "narration_audio": "audio/vo/scene04.flac",
+      "shots": [
+        {
+          "id": "s04a",
+          "duration": 5,
+          "prompt": "Steadicam moves quickly through a working AI data center, endless rows of dense server racks receding into the distance, a technician walks and inspects equipment, cooling fans visibly spinning, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1040,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s04b",
+          "duration": 5,
+          "prompt": "Low angle tracking shot along server rack doors, subtle translucent visualization of cool airflow streaming through the racks, blinking status lights, camera glides sideways, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1041,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "title": "THE RAW MATERIAL",
+      "start": 40,
+      "end": 50,
+      "duration": 10,
+      "narration": "The journey begins with silicon, refined into extremely pure crystals, then sliced into almost impossibly precise wafers.",
+      "sound": "Fine saw whine, soft metallic resonance",
+      "overlay": null,
+      "narration_audio": "audio/vo/scene05.flac",
+      "shots": [
+        {
+          "id": "s05a",
+          "duration": 5,
+          "prompt": "Extreme macro moving shot of a large cylindrical monocrystalline silicon ingot slowly rotating in an industrial wafer production machine, precision wire saw guides moving, metallic grey surface reflections, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1050,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s05b",
+          "duration": 5,
+          "prompt": "Macro shot of thin mirror-polished silicon wafers being lifted one by one by a robotic handler and placed into a wafer cassette, smooth mechanical motion, clean industrial light, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1051,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 6,
+      "title": "THE CLEANROOM",
+      "start": 50,
+      "end": 60,
+      "duration": 10,
+      "narration": "Inside a chip fab, even a tiny particle can ruin a circuit. Cleanrooms protect an astonishingly delicate process.",
+      "sound": "Air handler hiss, soft footsteps",
+      "overlay": null,
+      "narration_audio": "audio/vo/scene06.flac",
+      "shots": [
+        {
+          "id": "s06a",
+          "duration": 5,
+          "prompt": "Continuous steadicam shot walking alongside engineers in white full-body cleanroom suits through a semiconductor fab corridor, they walk naturally, bright even lighting, yellow-tinted lithography bay light in distance, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1060,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s06b",
+          "duration": 5,
+          "prompt": "Looking up at automated overhead wafer transport pods gliding quickly along ceiling rails in a large cleanroom, pods stop and lower on hoists to tools, camera tilts and tracks with them, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1061,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 7,
+      "title": "PRINTING CIRCUITS",
+      "start": 60,
+      "end": 70,
+      "duration": 10,
+      "narration": "Lithography transfers intricate patterns onto silicon. Layer after layer, microscopic structures begin to become real computing devices.",
+      "sound": "Precise servo ticks, deep resonant tone",
+      "overlay": "MICROSCOPIC PROCESS — VISUALIZATION",
+      "narration_audio": "audio/vo/scene07.flac",
+      "shots": [
+        {
+          "id": "s07a",
+          "duration": 5,
+          "prompt": "Close-up of a semiconductor lithography machine operating, a wafer stage scans rapidly left and right under a large optical lens assembly, precision actuators adjust, cool light reflects on the wafer, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1070,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s07b",
+          "duration": 5,
+          "prompt": "Educational microscopic visualization of a silicon chip cross-section, layered nanoscale structures grow upward step by step, metal interconnect layers forming, camera slowly orbits, scientific style, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1071,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 8,
+      "title": "BEYOND A SINGLE STEP",
+      "start": 70,
+      "end": 80,
+      "duration": 10,
+      "narration": "A finished chip takes many repeated steps: deposition, etching, inspection, and meticulous control of each microscopic layer.",
+      "sound": "Valve clicks, vacuum pump hum",
+      "overlay": null,
+      "narration_audio": "audio/vo/scene08.flac",
+      "shots": [
+        {
+          "id": "s08a",
+          "duration": 5,
+          "prompt": "Inside an advanced semiconductor fab, a robot arm transfers a wafer into a process chamber, chamber door slides shut, mechanical valves operate, faint violet plasma glow through viewport, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1080,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s08b",
+          "duration": 5,
+          "prompt": "Precision inspection optics move over a spinning wafer surface, rainbow diffraction shimmering across the wafer, microscope head sweeps, controlled manufacturing choreography, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1081,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 9,
+      "title": "PACKAGING THE POWER",
+      "start": 80,
+      "end": 90,
+      "duration": 10,
+      "narration": "Manufacturing is only part of the challenge. Advanced packaging connects complex chips, memory, and communication pathways into powerful systems.",
+      "sound": "Tiny mechanical clicks, soft hum",
+      "overlay": null,
+      "narration_audio": "audio/vo/scene09.flac",
+      "shots": [
+        {
+          "id": "s09a",
+          "duration": 5,
+          "prompt": "Macro orbiting shot of an advanced semiconductor packaging line, a micro-assembly robot with tiny grippers picks up small chiplets and places them precisely onto a green substrate, shallow depth of field, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1090,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s09b",
+          "duration": 5,
+          "prompt": "Close-up of a package alignment system, camera heads and gantries move above substrates with chiplets and memory stacks, conveyor advances, continuous slow orbital camera move, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1091,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 10,
+      "title": "THE DESIGN DREAM",
+      "start": 90,
+      "end": 100,
+      "duration": 10,
+      "narration": "Terafab's vision links chip design, manufacturing, packaging, and testing more closely. Whether it can deliver remains an open question.",
+      "sound": "Conveyor rumble, scanning beeps",
+      "overlay": "PROPOSED INTEGRATED WORKFLOW",
+      "narration_audio": "audio/vo/scene10.flac",
+      "shots": [
+        {
+          "id": "s10a",
+          "duration": 5,
+          "prompt": "Tracking shot following a small semiconductor package carried on an automated conveyor through inspection stations, cameras and lights inspect it, robotic arm moves, futuristic yet plausible production line, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1100,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s10b",
+          "duration": 5,
+          "prompt": "Wide tracking shot of an automated chip testing line, packages move between test stations, robotic handlers insert them into test sockets, engineers walking in the background, filmic lighting, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1101,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 11,
+      "title": "ELECTRIC VEHICLES",
+      "start": 100,
+      "end": 110,
+      "duration": 10,
+      "narration": "One possible destination: advanced computing for electric vehicles, where every decision depends on fast, reliable processing.",
+      "sound": "Electric motor whine, tire hiss",
+      "overlay": null,
+      "narration_audio": "audio/vo/scene11.flac",
+      "shots": [
+        {
+          "id": "s11a",
+          "duration": 5,
+          "prompt": "Dynamic tracking shot from a parallel camera car of a sleek unbranded futuristic electric sedan driving fast through a modern closed test track, wheels turning realistically, reflections sliding on bodywork, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1110,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s11b",
+          "duration": 5,
+          "prompt": "Close-up moving shot of a generic automotive computer module on a lab test bench, cooling fan spinning, status LEDs blinking, technician hand connects a cable, camera slowly pushes in, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1111,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 12,
+      "title": "ROBOTICS",
+      "start": 110,
+      "end": 120,
+      "duration": 10,
+      "narration": "Another: humanoid robots. Real-world autonomy demands sensing, computation, motion control, and split-second decisions.",
+      "sound": "Servo whirs, footsteps on concrete",
+      "overlay": null,
+      "narration_audio": "audio/vo/scene12.flac",
+      "shots": [
+        {
+          "id": "s12a",
+          "duration": 5,
+          "prompt": "Full-body humanoid industrial robot walks forward with believable weight across a research warehouse floor, smooth tracking camera following beside it, practical laboratory lighting, unbranded robot, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1120,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s12b",
+          "duration": 5,
+          "prompt": "Humanoid robot uses articulated hands to pick up a light cardboard box from a shelf, turns its torso and places the box on a table, grounded physics, camera orbits slowly, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1121,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 13,
+      "title": "THE AI DATA CENTER",
+      "start": 120,
+      "end": 130,
+      "duration": 10,
+      "narration": "And then there's AI infrastructure: rooms of machines running models, training systems, and serving millions of requests.",
+      "sound": "Dense fan roar, electrical hum",
+      "overlay": null,
+      "narration_audio": "audio/vo/scene13.flac",
+      "shots": [
+        {
+          "id": "s13a",
+          "duration": 5,
+          "prompt": "Long forward dolly down a wide AI supercomputer data center hallway, countless active cooling fans and blinking LED lights, overhead cable trays, camera glides steadily forward, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1130,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s13b",
+          "duration": 5,
+          "prompt": "A technician in safety gear slides a server sled out of a rack and examines it, cables and lights, fans spinning, camera arcs around the technician, documentary realism, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1131,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 14,
+      "title": "A HUGE AMBITION",
+      "start": 130,
+      "end": 140,
+      "duration": 10,
+      "narration": "The proposed scale is extraordinary. But scaling a semiconductor fab takes equipment, skilled teams, reliable yields, and years of execution.",
+      "sound": "Forklift beeps, crane motors, heavy thuds",
+      "overlay": null,
+      "narration_audio": "audio/vo/scene14.flac",
+      "shots": [
+        {
+          "id": "s14a",
+          "duration": 5,
+          "prompt": "Ground-level tracking shot at a large chip factory construction site, forklifts transporting big wooden crates, workers in hard hats and safety vests walking, overhead crane moving slowly, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1140,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s14b",
+          "duration": 5,
+          "prompt": "Engineers carefully guide a large piece of semiconductor equipment being installed with a crane inside a new factory building, they check tablets, camera moves past them, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1141,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 15,
+      "title": "THE REAL RISKS",
+      "start": 140,
+      "end": 150,
+      "duration": 10,
+      "narration": "Money alone won't guarantee success. Precision machines, energy, water, talent, and manufacturing yield all determine what is possible.",
+      "sound": "Tense pulse, keyboard clicks",
+      "overlay": null,
+      "narration_audio": "audio/vo/scene15.flac",
+      "shots": [
+        {
+          "id": "s15a",
+          "duration": 5,
+          "prompt": "Handheld moving shot through a semiconductor factory control room, technicians at desks review abstract non-legible charts on screens, one points at a display, monitors glow teal, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1150,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s15b",
+          "duration": 5,
+          "prompt": "Technician calibrates a precision machine with tools, panels open, mechanical parts adjust, water pipes and power conduits visible, camera moves around purposefully, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1151,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 16,
+      "title": "THE FUTURE IN SPACE",
+      "start": 150,
+      "end": 160,
+      "duration": 10,
+      "narration": "The boldest longer-term vision goes beyond Earth: specialized chips that could someday support computing in orbit.",
+      "sound": "Airless hum, soft cosmic swell",
+      "overlay": "FUTURE CONCEPT — NOT AN EXISTING TERAFAB SYSTEM",
+      "narration_audio": "audio/vo/scene16.flac",
+      "shots": [
+        {
+          "id": "s16a",
+          "duration": 5,
+          "prompt": "Speculative space visualization, a future orbital computing satellite with large solar arrays slowly unfolding, Earth rotating below with clouds, smooth camera flyby, realistic sunlight, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1160,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s16b",
+          "duration": 5,
+          "prompt": "Wide shot of a satellite constellation in low Earth orbit passing over the night side of Earth, city lights below, solar panels glinting, slow camera drift, scientific concept visualization, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1161,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 17,
+      "title": "WHAT'S ACTUALLY CONFIRMED",
+      "start": 160,
+      "end": 170,
+      "duration": 10,
+      "narration": "As of late 2026, Terafab is still a project in development. Its ambitious production targets are plans, not completed milestones.",
+      "sound": "Single piano note, low drone",
+      "overlay": "PLANS ≠ COMPLETED PRODUCTION",
+      "narration_audio": "audio/vo/scene17.flac",
+      "shots": [
+        {
+          "id": "s17a",
+          "duration": 5,
+          "prompt": "Continuous orbital camera movement around a shining silicon wafer held on a clean automated robotic inspection stage, light reflections sweeping across its surface, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1170,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s17b",
+          "duration": 5,
+          "prompt": "Aerial shot at dusk of a vast proposed industrial campus under construction, construction vehicles driving, cranes moving, work lights turning on, conceptual architectural visualization, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1171,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    },
+    {
+      "scene": 18,
+      "title": "THE FINAL QUESTION",
+      "start": 170,
+      "end": 180,
+      "duration": 10,
+      "narration": "If Terafab succeeds, it could reshape how AI hardware is made. If it doesn't, the challenge remains. What's your prediction?",
+      "sound": "Bass swell, final hit, silence",
+      "overlay": "TERAFAB — THE FUTURE OF AI CHIPS?",
+      "narration_audio": "audio/vo/scene18.flac",
+      "shots": [
+        {
+          "id": "s18a",
+          "duration": 5,
+          "prompt": "Camera pulls back from glowing status lights on a mounted computing board, retreating backward through an active data center aisle with blinking servers and spinning fans, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1180,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        },
+        {
+          "id": "s18b",
+          "duration": 5,
+          "prompt": "Camera rises and pulls back to a wide night city skyline, alive with moving traffic and glowing windows, atmospheric haze, epic finishing aerial move, photorealistic cinematic documentary CGI, cool teal and warm amber highlights, dynamic purposeful camera movement, continuous natural motion, physically plausible, 16:9 widescreen, no text, no captions, no logos, no watermark",
+          "negative_prompt": "text, letters, words, captions, subtitles, watermark, logo, brand name, signage text, static image, still frame, frozen, slideshow, blurry, low quality, distorted, deformed hands, extra limbs, cartoon, anime, sparks, fire, explosion",
+          "seed": 1181,
+          "status": "pending",
+          "attempts": [],
+          "output": null
+        }
+      ]
+    }
+  ]
+}

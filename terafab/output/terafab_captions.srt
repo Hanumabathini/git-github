@@ -1,0 +1,203 @@
+1
+00:00:00,450 --> 00:00:05,082
+Artificial intelligence is growing faster
+than the factories that make its chips.
+
+2
+00:00:05,212 --> 00:00:07,700
+So what happens when demand outruns
+supply?
+
+3
+00:00:10,450 --> 00:00:14,566
+Every robot, self-driving system, and AI
+server needs silicon.
+
+4
+00:00:14,696 --> 00:00:18,964
+But advanced chips are among humanity's
+hardest products to manufacture.
+
+5
+00:00:20,450 --> 00:00:26,563
+Enter Terafab: a proposed giant chipmaking
+project backed by Tesla and SpaceX, built
+
+6
+00:00:26,413 --> 00:00:28,408
+around one ambitious idea.
+
+7
+00:00:28,538 --> 00:00:29,318
+Scale.
+
+8
+00:00:30,450 --> 00:00:31,664
+The bet is simple.
+
+9
+00:00:31,794 --> 00:00:35,734
+If computing becomes the engine of
+everything, controlling more chip
+
+10
+00:00:35,584 --> 00:00:37,574
+production could change the race.
+
+11
+00:00:40,450 --> 00:00:46,045
+The journey begins with silicon, refined
+into extremely pure crystals, then sliced
+
+12
+00:00:45,895 --> 00:00:48,568
+into almost impossibly precise wafers.
+
+13
+00:00:50,450 --> 00:00:54,484
+Inside a chip fab, even a tiny particle
+can ruin a circuit.
+
+14
+00:00:54,614 --> 00:00:57,714
+Cleanrooms protect an astonishingly
+delicate process.
+
+15
+00:01:00,450 --> 00:01:03,745
+Lithography transfers intricate patterns
+onto silicon.
+
+16
+00:01:03,875 --> 00:01:09,150
+Layer after layer, microscopic structures
+begin to become real computing devices.
+
+17
+00:01:10,450 --> 00:01:15,671
+A finished chip takes many repeated steps:
+deposition, etching, inspection, and
+
+18
+00:01:15,521 --> 00:01:18,560
+meticulous control of each microscopic
+layer.
+
+19
+00:01:20,450 --> 00:01:23,185
+Manufacturing is only part of the
+challenge.
+
+20
+00:01:23,315 --> 00:01:28,611
+Advanced packaging connects complex chips,
+memory, and communication pathways into
+
+21
+00:01:28,461 --> 00:01:29,678
+powerful systems.
+
+22
+00:01:30,450 --> 00:01:35,503
+Terafab's vision links chip design,
+manufacturing, packaging, and testing more
+
+23
+00:01:35,353 --> 00:01:36,006
+closely.
+
+24
+00:01:36,136 --> 00:01:39,096
+Whether it can deliver remains an open
+question.
+
+25
+00:01:40,450 --> 00:01:45,462
+One possible destination: advanced
+computing for electric vehicles, where
+
+26
+00:01:45,312 --> 00:01:48,925
+every decision depends on fast, reliable
+processing.
+
+27
+00:01:50,450 --> 00:01:52,313
+Another: humanoid robots.
+
+28
+00:01:52,443 --> 00:01:57,197
+Real-world autonomy demands sensing,
+computation, motion control, and
+
+29
+00:01:57,047 --> 00:01:58,732
+split-second decisions.
+
+30
+00:02:00,450 --> 00:02:05,430
+And then there's AI infrastructure: rooms
+of machines running models, training
+
+31
+00:02:05,280 --> 00:02:08,031
+systems, and serving millions of requests.
+
+32
+00:02:10,450 --> 00:02:12,614
+The proposed scale is extraordinary.
+
+33
+00:02:12,744 --> 00:02:18,104
+But scaling a semiconductor fab takes
+equipment, skilled teams, reliable yields,
+
+34
+00:02:17,954 --> 00:02:19,601
+and years of execution.
+
+35
+00:02:20,450 --> 00:02:22,577
+Money alone won't guarantee success.
+
+36
+00:02:22,707 --> 00:02:28,371
+Precision machines, energy, water, talent,
+and manufacturing yield all determine what
+
+37
+00:02:28,221 --> 00:02:29,150
+is possible.
+
+38
+00:02:30,450 --> 00:02:35,462
+The boldest longer-term vision goes beyond
+Earth: specialized chips that could
+
+39
+00:02:35,312 --> 00:02:37,644
+someday support computing in orbit.
+
+40
+00:02:40,450 --> 00:02:45,256
+As of late 2026, Terafab is still a
+project in development.
+
+41
+00:02:45,386 --> 00:02:49,638
+Its ambitious production targets are
+plans, not completed milestones.
+
+42
+00:02:50,450 --> 00:02:54,544
+If Terafab succeeds, it could reshape how
+AI hardware is made.
+
+43
+00:02:54,674 --> 00:02:56,717
+If it doesn't, the challenge remains.
+
+44
+00:02:56,847 --> 00:02:58,122
+What's your prediction?
+

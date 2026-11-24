@@ -1,0 +1,4 @@
+clips/
+__pycache__/
+*.tmp
+output/terafab_full_movie.mp4

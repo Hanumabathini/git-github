@@ -1,0 +1,310 @@
+{
+  "voice": "Kokoro-82M af_heart",
+  "vo_offset": 0.45,
+  "scenes": [
+    {
+      "scene": 1,
+      "speed": 1.0,
+      "vo_start": 0.45,
+      "vo_duration": 7.1,
+      "sentences": [
+        {
+          "text": "Artificial intelligence is growing faster than the factories that make its chips.",
+          "start": 0.45,
+          "end": 4.932
+        },
+        {
+          "text": "So what happens when demand outruns supply?",
+          "start": 5.212,
+          "end": 7.55
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "speed": 1.0,
+      "vo_start": 10.45,
+      "vo_duration": 8.364,
+      "sentences": [
+        {
+          "text": "Every robot, self-driving system, and AI server needs silicon.",
+          "start": 10.45,
+          "end": 14.416
+        },
+        {
+          "text": "But advanced chips are among humanity's hardest products to manufacture.",
+          "start": 14.696,
+          "end": 18.814
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "speed": 1.0,
+      "vo_start": 20.45,
+      "vo_duration": 8.718,
+      "sentences": [
+        {
+          "text": "Enter Terafab: a proposed giant chipmaking project backed by Tesla and SpaceX, built around one ambitious idea.",
+          "start": 20.45,
+          "end": 28.258
+        },
+        {
+          "text": "Scale.",
+          "start": 28.538,
+          "end": 29.168
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "speed": 1.0,
+      "vo_start": 30.45,
+      "vo_duration": 6.974,
+      "sentences": [
+        {
+          "text": "The bet is simple.",
+          "start": 30.45,
+          "end": 31.514
+        },
+        {
+          "text": "If computing becomes the engine of everything, controlling more chip production could change the race.",
+          "start": 31.794,
+          "end": 37.424
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "speed": 1.0,
+      "vo_start": 40.45,
+      "vo_duration": 7.968,
+      "sentences": [
+        {
+          "text": "The journey begins with silicon, refined into extremely pure crystals, then sliced into almost impossibly precise wafers.",
+          "start": 40.45,
+          "end": 48.418
+        }
+      ]
+    },
+    {
+      "scene": 6,
+      "speed": 1.0,
+      "vo_start": 50.45,
+      "vo_duration": 7.114,
+      "sentences": [
+        {
+          "text": "Inside a chip fab, even a tiny particle can ruin a circuit.",
+          "start": 50.45,
+          "end": 54.334
+        },
+        {
+          "text": "Cleanrooms protect an astonishingly delicate process.",
+          "start": 54.614,
+          "end": 57.564
+        }
+      ]
+    },
+    {
+      "scene": 7,
+      "speed": 1.0,
+      "vo_start": 60.45,
+      "vo_duration": 8.55,
+      "sentences": [
+        {
+          "text": "Lithography transfers intricate patterns onto silicon.",
+          "start": 60.45,
+          "end": 63.595
+        },
+        {
+          "text": "Layer after layer, microscopic structures begin to become real computing devices.",
+          "start": 63.875,
+          "end": 69.0
+        }
+      ]
+    },
+    {
+      "scene": 8,
+      "speed": 1.0,
+      "vo_start": 70.45,
+      "vo_duration": 7.96,
+      "sentences": [
+        {
+          "text": "A finished chip takes many repeated steps: deposition, etching, inspection, and meticulous control of each microscopic layer.",
+          "start": 70.45,
+          "end": 78.41
+        }
+      ]
+    },
+    {
+      "scene": 9,
+      "speed": 1.07,
+      "vo_start": 80.45,
+      "vo_duration": 9.078,
+      "sentences": [
+        {
+          "text": "Manufacturing is only part of the challenge.",
+          "start": 80.45,
+          "end": 83.035
+        },
+        {
+          "text": "Advanced packaging connects complex chips, memory, and communication pathways into powerful systems.",
+          "start": 83.315,
+          "end": 89.528
+        }
+      ]
+    },
+    {
+      "scene": 10,
+      "speed": 1.0,
+      "vo_start": 90.45,
+      "vo_duration": 8.496,
+      "sentences": [
+        {
+          "text": "Terafab's vision links chip design, manufacturing, packaging, and testing more closely.",
+          "start": 90.45,
+          "end": 95.856
+        },
+        {
+          "text": "Whether it can deliver remains an open question.",
+          "start": 96.136,
+          "end": 98.946
+        }
+      ]
+    },
+    {
+      "scene": 11,
+      "speed": 1.0,
+      "vo_start": 100.45,
+      "vo_duration": 8.325,
+      "sentences": [
+        {
+          "text": "One possible destination: advanced computing for electric vehicles, where every decision depends on fast, reliable processing.",
+          "start": 100.45,
+          "end": 108.775
+        }
+      ]
+    },
+    {
+      "scene": 12,
+      "speed": 1.0,
+      "vo_start": 110.45,
+      "vo_duration": 8.132,
+      "sentences": [
+        {
+          "text": "Another: humanoid robots.",
+          "start": 110.45,
+          "end": 112.163
+        },
+        {
+          "text": "Real-world autonomy demands sensing, computation, motion control, and split-second decisions.",
+          "start": 112.443,
+          "end": 118.582
+        }
+      ]
+    },
+    {
+      "scene": 13,
+      "speed": 1.0,
+      "vo_start": 120.45,
+      "vo_duration": 7.431,
+      "sentences": [
+        {
+          "text": "And then there's AI infrastructure: rooms of machines running models, training systems, and serving millions of requests.",
+          "start": 120.45,
+          "end": 127.881
+        }
+      ]
+    },
+    {
+      "scene": 14,
+      "speed": 1.0,
+      "vo_start": 130.45,
+      "vo_duration": 9.001,
+      "sentences": [
+        {
+          "text": "The proposed scale is extraordinary.",
+          "start": 130.45,
+          "end": 132.464
+        },
+        {
+          "text": "But scaling a semiconductor fab takes equipment, skilled teams, reliable yields, and years of execution.",
+          "start": 132.744,
+          "end": 139.451
+        }
+      ]
+    },
+    {
+      "scene": 15,
+      "speed": 1.0,
+      "vo_start": 140.45,
+      "vo_duration": 8.55,
+      "sentences": [
+        {
+          "text": "Money alone won't guarantee success.",
+          "start": 140.45,
+          "end": 142.427
+        },
+        {
+          "text": "Precision machines, energy, water, talent, and manufacturing yield all determine what is possible.",
+          "start": 142.707,
+          "end": 149.0
+        }
+      ]
+    },
+    {
+      "scene": 16,
+      "speed": 1.0,
+      "vo_start": 150.45,
+      "vo_duration": 7.044,
+      "sentences": [
+        {
+          "text": "The boldest longer-term vision goes beyond Earth: specialized chips that could someday support computing in orbit.",
+          "start": 150.45,
+          "end": 157.494
+        }
+      ]
+    },
+    {
+      "scene": 17,
+      "speed": 1.017,
+      "vo_start": 160.45,
+      "vo_duration": 9.038,
+      "sentences": [
+        {
+          "text": "As of late 2026, Terafab is still a project in development.",
+          "start": 160.45,
+          "end": 165.106
+        },
+        {
+          "text": "Its ambitious production targets are plans, not completed milestones.",
+          "start": 165.386,
+          "end": 169.488
+        }
+      ]
+    },
+    {
+      "scene": 18,
+      "speed": 1.0,
+      "vo_start": 170.45,
+      "vo_duration": 7.522,
+      "sentences": [
+        {
+          "text": "If Terafab succeeds, it could reshape how AI hardware is made.",
+          "start": 170.45,
+          "end": 174.394
+        },
+        {
+          "text": "If it doesn't, the challenge remains.",
+          "start": 174.674,
+          "end": 176.567
+        },
+        {
+          "text": "What's your prediction?",
+          "start": 176.847,
+          "end": 177.972
+        }
+      ]
+    }
+  ]
+}
