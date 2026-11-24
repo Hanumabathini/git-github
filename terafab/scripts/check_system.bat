@@ -20,7 +20,7 @@ echo ===== WanGP =====
 if exist "%WANGP%\wgp.py" (
   git -C "%WANGP%" log -1 --format="WanGP commit %%h  %%cd"
   echo Python environments:
-  for %%E in (env_uv venv .venv env) do if exist "%WANGP%\%%E" echo   %WANGP%\%%E
+  for %%E in (env_uv env_venv venv .venv env) do if exist "%WANGP%\%%E" echo   %WANGP%\%%E
   echo Downloaded model checkpoints:
   if exist "%WANGP%\ckpts" (dir /b /s "%WANGP%\ckpts\*.safetensors" 2>nul) else echo   none yet - first render downloads Wan2.2 5B weights
 ) else (

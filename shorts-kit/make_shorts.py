@@ -34,7 +34,7 @@ def find_wangp_python(wangp: Path, override: str | None) -> str:
     if override:
         return override
     win = platform.system() == "Windows"
-    for env in ("env_uv", "venv", ".venv", "env"):
+    for env in ("env_uv", "env_venv", "venv", ".venv", "env"):
         exe = wangp / env / ("Scripts/python.exe" if win else "bin/python")
         if exe.exists():
             return str(exe)
