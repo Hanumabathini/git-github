@@ -1,0 +1,19 @@
+{
+  "_help": "One entry per Short. 'shots' are the AI clips (each ~5 s) that get joined. 'captions' appear on screen in order, split evenly over the video. Replace this example with your own content.",
+  "music": "",
+  "videos": [
+    {
+      "name": "example_sunrise_motivation",
+      "shots": [
+        "Cinematic vertical shot, golden sunrise over misty green hills, slow drone push forward, warm light, highly detailed",
+        "A lone runner silhouetted on a mountain ridge at dawn, slow motion, lens flare, cinematic",
+        "Close-up of hands lifting a cup of chai, steam rising in morning sunlight, shallow depth of field"
+      ],
+      "captions": [
+        "Every morning is a new start",
+        "Small steps. Every day.",
+        "Begin now."
+      ]
+    }
+  ]
+}
